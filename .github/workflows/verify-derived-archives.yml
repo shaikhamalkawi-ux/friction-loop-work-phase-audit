@@ -1,0 +1,17 @@
+name: Verify published derived archives
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check ZIP CRC, release scope, and retained derived-row counts
+        run: python tools/verify_public_release.py
