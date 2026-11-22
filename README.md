@@ -24,7 +24,7 @@ The research compares force-reconstruction and numerical-work estimation across 
 
 ## Download and verify the current release
 
-The [public release index](RELEASE_INDEX.md) lists all **89** author-generated scientific files in four source-specific ZIP packages, their SHA-256 checksums and expected derived-ledger row counts. View the [verified GitHub Actions integrity test](https://github.com/shaikhamalkawi-ux/friction-loop-work-phase-audit/actions/runs/44970968458), or run `python tools/verify_public_release.py` after cloning. It checks retained ZIP content and derived CSV rows; it does not rerun the original provider source files.
+The [public release index](RELEASE_INDEX.md) lists all **89** author-generated scientific files in four source-specific ZIP packages, their SHA-256 checksums and expected derived-ledger row counts. View the [verified GitHub Actions integrity test](https://github.com/shaikhamalkawi-ux/friction-loop-work-phase-audit/actions/runs/44970968458), or run `python tools/verify_public_release.py` after cloning. It verifies each archive against its pinned SHA-256 digest, checks ZIP CRC integrity and retained derived-CSV row counts; it does not rerun the original provider source files.
 
 ## Main analysis numbers reported by the research package
 
