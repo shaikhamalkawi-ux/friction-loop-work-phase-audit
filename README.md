@@ -6,7 +6,7 @@ Companion repository for the Lubricants Paper B study of numerical work estimate
 
 The research compares force-reconstruction and numerical-work estimation across **finite, explicitly defined sampling phases**, with separate studies of the Imperial/PoliTO and EUCENTRE recorded friction-loop sources. The published study should not be interpreted as a field metrology certification or a guarantee for untested sampling schedules.
 
-**Data distinction:** Original third-party experimental recordings are **not redistributed here**. Source-specific scripts and author-generated derived score ledgers may be supplied in the repository's release archive. Use the official provider records for independent raw-input reruns.
+**Data distinction:** Original third-party experimental recordings are **not redistributed here**. Source-specific scripts and author-generated derived score ledgers are supplied in four source-scoped ZIP archives under [releases/](releases/). Use the official provider records for independent raw-input reruns.
 
 ## Original measurements (obtain from providers)
 
@@ -21,6 +21,10 @@ The research compares force-reconstruction and numerical-work estimation across 
 - Source identity, hashes, finite sampling definitions, and claim boundaries must be preserved when comparing results.
 - Recorded force/displacement errors, instrument calibration, physical dissipation, and source processing uncertainty are not interchangeable.
 - Do not pool or re-label the Imperial and EUCENTRE study conditions as independent laboratories of one specimen.
+
+## Download and verify the current release
+
+The [public release index](RELEASE_INDEX.md) lists all **89** author-generated scientific files in four source-specific ZIP packages, their SHA-256 checksums and expected derived-ledger row counts. View the [verified GitHub Actions integrity test](https://github.com/shaikhamalkawi-ux/friction-loop-work-phase-audit/actions/runs/44970968458), or run `python tools/verify_public_release.py` after cloning. It checks retained ZIP content and derived CSV rows; it does not rerun the original provider source files.
 
 ## Main analysis numbers reported by the research package
 
