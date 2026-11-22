@@ -19,7 +19,7 @@ With Python 3.11+ installed, run from repository root:
 python tools/verify_public_release.py
 ```
 
-The Python standard-library verifier checks ZIP CRC integrity, included-file counts, the exclusion of original raw MAT/TDMS files, and the four selected derived-ledger row counts. The same command runs automatically via [GitHub Actions](.github/workflows/verify-derived-archives.yml). [Initial successful workflow run](https://github.com/shaikhamalkawi-ux/friction-loop-work-phase-audit/actions/runs/44970968458).
+The Python 3.11+ standard-library verifier checks each ZIP against the SHA-256 digest pinned above, then checks ZIP CRC integrity, included-file counts, the exclusion of original raw MAT/TDMS files, and four selected derived-ledger row counts. This establishes identity of the published derived archives, not independent scientific reproduction. The same command runs automatically via [GitHub Actions](.github/workflows/verify-derived-archives.yml). [Initial successful workflow run](https://github.com/shaikhamalkawi-ux/friction-loop-work-phase-audit/actions/runs/44970968458).
 
 For scientific analysis, extract the source-scoped ZIP of interest. The archives preserve the original nested analysis scripts and source-specific instructions. Original third-party recordings must be obtained from [Imperial/PoliTO](https://doi.org/10.17632/gy587m7gx7.1) or [EUCENTRE/BED](https://doi.org/10.60756/euc-ubsy26g318), with identity/hash verification, for any full raw-data replay.
 
